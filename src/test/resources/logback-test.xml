@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="LOG_DIR" value="target/logs" />
+    <property name="LOG_DIR" value="logs" />
     <property name="LOG_FILE" value="${LOG_DIR}/automation.log" />
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
@@ -25,6 +25,7 @@
 
     <logger name="org.openqa.selenium" level="WARN" />
     <logger name="io.qameta.allure" level="INFO" />
+    <logger name="org.testng" level="WARN" />
 
     <root level="INFO">
         <appender-ref ref="CONSOLE" />
