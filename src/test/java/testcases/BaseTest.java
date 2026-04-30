@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.*;
+import utilities.Constants;
 import utilities.DriverFactory;
 
 public class BaseTest {
@@ -15,10 +16,10 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         logger.info("Opening browser");
-        driver = DriverFactory.getDriver("chrome");
+        driver = DriverFactory.getDriver();
 
         logger.info("Navigating to SauceDemo");
-        driver.get("https://www.saucedemo.com/");
+        driver.get(Constants.Links.LOGIN_BASE_URL.getValue());
     }
 
     @AfterMethod
