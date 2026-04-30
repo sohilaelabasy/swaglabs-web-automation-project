@@ -4,6 +4,7 @@ public enum Constants {
     LOGIN_USERNAME("standard_user"),
     LOGIN_PASSWORD("secret_sauce"),
     LOGIN_BASE_URL("https://www.saucedemo.com/"),
+
     LANDING_PAGE_URL("https://www.saucedemo.com/inventory.html"),
     CART_PAGE_URL("https://www.saucedemo.com/cart.html"),
     CHECKOUT_STEP_ONE("https://www.saucedemo.com/checkout-step-one.html"),
@@ -27,7 +28,7 @@ public enum Constants {
     PRODUCT_ITEM_5_REMOVE("SauceLabsOnesie_remove"),
     PRODUCT_ITEM_6_REMOVE("TShirtRed_remove");
 
-    public final String value;
+    private final String value;
 
     Constants(String value) {
         this.value = value;

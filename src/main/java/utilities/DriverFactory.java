@@ -18,7 +18,7 @@ public final class DriverFactory {
     public static WebDriver getDriver() {
         if (DriverFactory.driver == null) {
             DriverFactory.driver = createDriver(resolveBrowser());
-       
+
         }
         return DriverFactory.driver;
     }
