@@ -8,3 +8,6 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+# Allure reports
+allure-results/
+allure-report/
