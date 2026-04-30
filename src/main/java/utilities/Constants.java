@@ -18,21 +18,7 @@ public final class Constants {
             return value;
         }
     }
-    public enum Locators{
-        LOGIN_ID("user-name"),
-        LOGIN_PASSWORD_ID("password"),
-        LOGIN_BUTTON_ID("login-button");
 
-       private final String id;
-
-        Locators(String id) {
-            this.id = id;
-        }
-
-        public String id() {
-            return id;
-        }  
-    }
 
     public enum Links {
         LOGIN_BASE_URL("https://www.saucedemo.com/"),
@@ -68,41 +54,7 @@ public final class Constants {
         }
     }
 
-    public enum ProductItems {
-        ITEM_1("add-to-cart-sauce-labs-backpack"),
-        ITEM_2("add-to-cart-sauce-labs-bike-light"),
-        ITEM_3("add-to-cart-sauce-labs-bolt-t-shirt"),
-        ITEM_4("add-to-cart-sauce-labs-fleece-jacket"),
-        ITEM_5("add-to-cart-sauce-labs-onesie"),
-        ITEM_6("add-to-cart-test.allthethings()-t-shirt-(red)");
+   
 
-        private final String value;
-
-        ProductItems(String value) {
-            this.value = value;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
-
-    public enum ProductRemoveIds {
-        ITEM_1_REMOVE("remove-sauce-labs-backpack"),
-        ITEM_2_REMOVE("remove-sauce-labs-bike-light"),
-        ITEM_3_REMOVE("remove-sauce-labs-bolt-t-shirt"),
-        ITEM_4_REMOVE("remove-sauce-labs-fleece-jacket"),
-        ITEM_5_REMOVE("remove-sauce-labs-onesie"),
-        ITEM_6_REMOVE("remove-test.allthethings()-t-shirt-(red)");
-
-        private final String value;
-
-        ProductRemoveIds(String value) {
-            this.value = value;
-        }
-
-        public String getValue() {
-            return value;
-        }
-    }
+   
 }
