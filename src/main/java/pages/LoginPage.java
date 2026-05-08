@@ -6,7 +6,7 @@ import utilities.SeleniumUtils;
 
 public class LoginPage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     private final By userName = By.id("user-name");
     private final By password = By.id("password");
@@ -17,22 +17,27 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    public void enterUserName(String usernameText) {
+    public LoginPage enterUserName(String usernameText) {
         SeleniumUtils.type(driver, userName, usernameText);
+        return this ;
     }
 
-    public void enterPassword(String passwordText) {
+    public LoginPage enterPassword(String passwordText) {
         SeleniumUtils.type(driver, password, passwordText);
+        return this;
     }
 
-    public void clickLogin() {
+    public LandingPage clickLogin() {
         SeleniumUtils.click(driver, loginButton);
+        return new LandingPage(driver);
     }
 
-    public void login(String usernameText, String passwordText) {
+    public LandingPage login(String usernameText, String passwordText) {
+
         enterUserName(usernameText);
         enterPassword(passwordText);
-        clickLogin();
+
+        return clickLogin();
     }
 
     public String getErrorMessage() {
