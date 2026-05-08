@@ -11,3 +11,5 @@
 # Allure reports
 allure-results/
 allure-report/
+logs/
+target/
