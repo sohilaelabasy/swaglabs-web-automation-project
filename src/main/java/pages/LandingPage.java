@@ -10,6 +10,8 @@ public class LandingPage {
     private final WebDriver driver ;
     private static final By PRODUCT_TITLES = By.className("inventory_item_name");
     private static final By CART_BADGE = By.className("shopping_cart_badge");
+    private static final By menuButton = By.id("react-burger-menu-btn");
+    private static final By logoutButton = By.id("logout_sidebar_link");
     private static final By CART_ICON =
             By.className("shopping_cart_link");
     private static final By SORT_DROPDOWN =
@@ -66,5 +68,13 @@ public LandingPage(WebDriver driver){
         Select select = new Select(dropdown);
         select.selectByVisibleText(visibleText);
         return this;
+    }
+    public LoginPage clickLogout() {
+
+        SeleniumUtils.click(driver, menuButton);
+
+        SeleniumUtils.click(driver, logoutButton);
+
+        return new LoginPage(driver);
     }
 }
