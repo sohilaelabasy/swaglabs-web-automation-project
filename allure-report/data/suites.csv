@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1221","emptyPassword","Surefire suite","2026-05-09","passed","2026-05-09","testcases.LoginTest","Surefire test","testcases.LoginTest","emptyPassword"
+"","1158","invalidPasswordLogin","Surefire suite","2026-05-09","passed","2026-05-09","testcases.LoginTest","Surefire test","testcases.LoginTest","invalidPasswordLogin"
+"","1291","lockedOutUserLogin","Surefire suite","2026-05-09","passed","2026-05-09","testcases.LoginTest","Surefire test","testcases.LoginTest","lockedOutUserLogin"
+"","1100","emptyUsername","Surefire suite","2026-05-09","passed","2026-05-09","testcases.LoginTest","Surefire test","testcases.LoginTest","emptyUsername"
+"","803","emptyUsernameAndPassword","Surefire suite","2026-05-09","passed","2026-05-09","testcases.LoginTest","Surefire test","testcases.LoginTest","emptyUsernameAndPassword"
+"","1210","validLogin","Surefire suite","2026-05-09","passed","2026-05-09","testcases.LoginTest","Surefire test","testcases.LoginTest","validLogin"
+"","1090","invalidUsernameLogin","Surefire suite","2026-05-09","passed","2026-05-09","testcases.LoginTest","Surefire test","testcases.LoginTest","invalidUsernameLogin"

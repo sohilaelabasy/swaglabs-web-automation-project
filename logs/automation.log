@@ -1,32 +1,352 @@
-2026-05-04 19:57:46.490 [main] INFO  testcases.BaseTest - Opening browser
-2026-05-04 19:57:46.499 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
-2026-05-04 19:57:46.499 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
-2026-05-04 19:57:46.503 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
-2026-05-04 19:57:46.504 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
-2026-05-04 19:57:51.731 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
-2026-05-04 19:57:53.100 [main] INFO  testcases.BaseTest - Closing browser
-2026-05-04 19:57:53.103 [main] INFO  utilities.DriverFactory - Closing browser
-2026-05-04 20:03:09.773 [main] INFO  testcases.BaseTest - Opening browser
-2026-05-04 20:03:09.780 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
-2026-05-04 20:03:09.781 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
-2026-05-04 20:03:09.785 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
-2026-05-04 20:03:09.786 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
-2026-05-04 20:03:17.719 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
-2026-05-04 20:03:20.241 [main] INFO  testcases.BaseTest - Closing browser
-2026-05-04 20:03:20.242 [main] INFO  utilities.DriverFactory - Closing browser
-2026-05-04 20:06:15.015 [main] INFO  testcases.BaseTest - Opening browser
-2026-05-04 20:06:15.021 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
-2026-05-04 20:06:15.021 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
-2026-05-04 20:06:15.023 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
-2026-05-04 20:06:15.024 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
-2026-05-04 20:06:24.273 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
-2026-05-04 20:06:25.734 [main] INFO  testcases.BaseTest - Closing browser
-2026-05-04 20:06:25.734 [main] INFO  utilities.DriverFactory - Closing browser
-2026-05-04 20:42:56.497 [main] INFO  testcases.BaseTest - Opening browser
-2026-05-04 20:42:56.507 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
-2026-05-04 20:42:56.508 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
-2026-05-04 20:42:56.516 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
-2026-05-04 20:42:56.516 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
-2026-05-04 20:42:59.326 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
-2026-05-04 20:43:01.761 [main] INFO  testcases.BaseTest - Closing browser
-2026-05-04 20:43:01.761 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:32:24.378 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:32:24.410 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:32:24.410 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:32:24.415 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:32:24.416 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:33:23.637 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:33:28.481 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:33:28.482 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:35:47.889 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:35:47.897 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:35:47.897 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:35:47.901 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:35:47.901 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:35:50.914 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:35:54.514 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:35:54.514 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:35:54.897 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:35:54.897 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:35:54.898 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:35:54.898 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:35:54.898 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:35:56.002 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:35:59.343 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:35:59.343 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:36:10.569 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:36:10.576 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:36:10.577 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:36:10.579 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:36:10.579 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:36:12.843 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:36:17.172 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:36:17.173 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:36:17.736 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:36:17.736 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:36:17.736 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:36:17.736 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:36:17.736 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:36:19.010 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:36:22.588 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:36:22.589 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:42:07.633 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:42:07.636 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:42:07.636 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:42:07.637 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:42:07.637 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:42:10.394 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:42:14.470 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:42:14.471 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:43:27.225 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:43:27.231 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:43:27.232 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:43:27.234 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:43:27.235 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:43:29.506 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:43:33.358 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:43:33.359 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:54:56.395 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:54:56.399 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:54:56.399 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:54:56.401 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:54:56.403 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:54:59.076 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:55:02.578 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:55:02.579 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:55:23.814 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:55:23.823 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:55:23.823 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:55:23.827 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:55:23.827 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:55:26.990 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:55:31.221 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:55:31.221 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 13:55:57.172 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 13:55:57.185 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 13:55:57.186 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 13:55:57.194 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 13:55:57.194 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 13:55:59.848 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 13:56:03.691 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 13:56:03.691 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:17:46.252 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:17:46.258 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:17:46.258 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:17:46.263 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:17:46.263 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:18:32.927 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:19:17.238 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:19:17.240 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:19:17.630 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:19:17.631 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:19:17.631 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:19:17.631 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:19:17.632 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:19:19.027 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:19:34.752 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:19:34.753 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:19:35.084 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:19:35.085 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:19:35.085 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:19:35.086 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:19:35.086 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:19:36.685 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:19:56.420 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:19:56.421 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:19:56.771 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:19:56.771 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:19:56.772 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:19:56.772 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:19:56.772 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:19:58.295 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:20:09.023 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:20:09.024 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:20:09.408 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:20:09.410 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:20:09.411 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:20:09.411 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:20:09.412 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:20:11.079 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:20:16.185 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:20:16.187 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:20:16.567 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:20:16.568 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:20:16.568 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:20:16.568 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:20:16.568 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:20:17.905 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:20:21.872 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:20:21.872 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:20:22.202 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:20:22.202 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:20:22.203 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:20:22.204 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:20:22.204 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:20:23.765 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:20:27.473 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:20:27.473 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:24:20.093 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:24:20.100 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:24:20.101 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:24:20.104 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:24:20.104 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:24:22.650 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:24:25.339 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:24:25.340 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:24:25.634 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:24:25.634 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:24:25.635 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:24:25.635 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:24:25.635 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:24:26.870 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:24:29.177 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:24:29.179 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:24:29.453 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:24:29.454 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:24:29.454 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:24:29.454 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:24:29.454 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:24:30.760 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:24:33.550 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:24:33.551 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:24:33.787 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:24:33.788 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:24:33.788 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:24:33.788 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:24:33.789 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:24:34.913 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:24:39.752 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:24:39.754 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:24:40.130 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:24:40.131 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:24:40.131 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:24:40.131 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:24:40.131 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:24:41.271 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:24:45.967 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:24:45.967 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:24:46.257 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:24:46.258 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:24:46.258 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:24:46.258 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:24:46.258 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:24:47.390 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:24:49.812 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:24:49.812 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:24:50.092 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:24:50.092 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:24:50.092 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:24:50.092 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:24:50.092 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:24:51.405 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:24:53.795 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:24:53.796 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:27:13.225 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:27:13.231 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:27:13.232 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:27:13.235 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:27:13.235 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:27:15.152 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:27:19.089 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:27:19.091 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:27:19.457 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:27:19.458 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:27:19.458 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:27:19.458 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:27:19.458 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:27:20.770 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:27:23.914 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:27:23.915 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:27:24.221 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:27:24.221 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:27:24.221 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:27:24.222 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:27:24.222 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:27:25.407 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:27:28.008 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:27:28.009 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:27:28.340 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:27:28.340 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:27:28.340 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:27:28.340 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:27:28.341 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:27:29.431 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:27:33.030 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:27:33.031 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:27:33.354 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:27:33.355 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:27:33.355 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:27:33.355 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:27:33.355 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:27:34.468 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:27:37.468 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:27:37.468 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:27:37.835 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:27:37.837 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:27:37.838 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:27:37.838 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:27:37.839 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:27:38.885 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:27:41.422 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:27:41.423 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:27:41.694 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:27:41.694 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:27:41.695 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:27:41.695 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:27:41.695 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:27:42.809 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:27:45.285 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:27:45.286 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:30:57.219 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:30:57.228 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:30:57.228 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:30:57.238 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:30:57.239 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:31:00.505 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:31:03.955 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:31:03.955 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:31:04.236 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:31:04.237 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:31:04.237 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:31:04.238 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:31:04.238 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:31:05.668 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:31:08.429 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:31:08.430 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:31:08.776 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:31:08.777 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:31:08.778 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:31:08.779 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:31:08.779 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:31:10.384 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:31:12.994 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:31:12.994 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:31:13.325 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:31:13.326 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:31:13.327 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:31:13.328 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:31:13.329 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:31:14.884 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:31:17.930 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:31:17.931 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:31:18.257 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:31:18.257 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:31:18.258 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:31:18.258 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:31:18.258 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:31:19.812 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:31:22.730 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:31:22.731 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:31:23.117 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:31:23.118 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:31:23.118 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:31:23.118 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:31:23.119 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:31:24.500 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:31:27.675 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:31:27.675 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:31:28.026 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:31:28.026 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:31:28.026 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:31:28.026 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:31:28.027 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:31:29.297 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:31:32.166 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:31:32.167 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:41:57.853 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:41:57.856 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:41:57.856 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:41:57.857 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:41:57.857 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:41:59.113 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:42:11.685 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:42:11.685 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:45:41.905 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:45:41.908 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:45:41.909 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:45:41.910 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:45:41.910 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:45:43.143 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:45:50.136 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:45:50.136 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:47:57.952 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:47:57.954 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:47:57.955 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:47:57.956 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:47:57.957 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:47:59.169 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:48:06.249 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:48:06.249 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:50:17.030 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:50:17.032 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:50:17.032 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:50:17.034 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:50:17.034 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:50:18.211 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:50:20.700 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:50:20.702 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:52:07.718 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:52:07.721 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:52:07.721 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:52:07.722 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:52:07.722 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:52:08.990 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:52:15.889 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:52:15.889 [main] INFO  utilities.DriverFactory - Closing browser
+2026-05-09 16:52:25.990 [main] INFO  testcases.BaseTest - Opening browser
+2026-05-09 16:52:25.994 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-05-09 16:52:25.994 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-05-09 16:52:25.996 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-05-09 16:52:25.996 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-05-09 16:52:27.232 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-05-09 16:52:33.996 [main] INFO  testcases.BaseTest - Closing browser
+2026-05-09 16:52:33.996 [main] INFO  utilities.DriverFactory - Closing browser
