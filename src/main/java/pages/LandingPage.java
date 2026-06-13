@@ -1,10 +1,16 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import utilities.Constants;
 import utilities.SeleniumUtils;
+
+import java.time.Duration;
 
 public class LandingPage {
     private final WebDriver driver ;
@@ -17,17 +23,27 @@ public class LandingPage {
     private static final By SORT_DROPDOWN =
             By.className("product_sort_container");
     private By addToCartButton(String productName){
-        return By.xpath(
-                "//div[contains(text(),'"+productName+ "')]/ancestor::div[@class='inventory_item']//button"
-        );
+        return By.id("add-to-cart-" + toProductSlug(productName));
     }
 
 public LandingPage(WebDriver driver){
     this.driver = driver ;
 }
     public LandingPage addToCart(String productName){
-
-        SeleniumUtils.click(driver, addToCartButton(productName));
+        By addButton = addToCartButton(productName);
+        By removeButton = removeButton(productName);
+        SeleniumUtils.click(driver, addButton, Duration.ofSeconds(10));
+        try {
+            SeleniumUtils.waitVisible(driver, removeButton, Duration.ofSeconds(5));
+        } catch (RuntimeException e) {
+            WebElement button = SeleniumUtils.waitVisible(driver, addButton, Duration.ofSeconds(5));
+            if (driver instanceof org.openqa.selenium.JavascriptExecutor js) {
+                js.executeScript("arguments[0].click();", button);
+            } else {
+                throw e;
+            }
+            SeleniumUtils.waitVisible(driver, removeButton, Duration.ofSeconds(10));
+        }
 
         return this;
     }
@@ -46,19 +62,32 @@ public LandingPage(WebDriver driver){
         }
     }
     public CartPage clickCartIcon(){
-
-        SeleniumUtils.click(driver, CART_ICON);
-
+        WebElement icon = SeleniumUtils.waitClickable(driver, CART_ICON, Duration.ofSeconds(10));
+        icon.click();
+        try {
+            SeleniumUtils.wait(driver, Duration.ofSeconds(5))
+                    .until(ExpectedConditions.urlToBe(Constants.Links.CART_PAGE_URL.getValue()));
+            return new CartPage(driver);
+        } catch (RuntimeException ignored) {
+            // Click didn't trigger navigation — try JS click
+        }
+        WebElement retry = SeleniumUtils.waitClickable(driver, CART_ICON, Duration.ofSeconds(5));
+        if (driver instanceof JavascriptExecutor js) {
+            js.executeScript("arguments[0].click();", retry);
+        } else {
+            retry.click();
+        }
+        SeleniumUtils.wait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.urlToBe(Constants.Links.CART_PAGE_URL.getValue()));
         return new CartPage(driver);
     }
     private By removeButton(String productName){
-        return By.xpath(
-                "//div[contains(text() ,'"+productName+"')]/ancestor::div[@class='inventory_item']//button"
-        );
+        return By.id("remove-" + toProductSlug(productName));
     }
     public LandingPage removeFromCart(String productName){
-
-        SeleniumUtils.click(driver, removeButton(productName));
+        By removeButton = removeButton(productName);
+        SeleniumUtils.click(driver, removeButton, Duration.ofSeconds(10));
+        SeleniumUtils.waitVisible(driver, addToCartButton(productName), Duration.ofSeconds(10));
 
         return this;
     }
@@ -70,11 +99,20 @@ public LandingPage(WebDriver driver){
         return this;
     }
     public LoginPage clickLogout() {
-
-        SeleniumUtils.click(driver, menuButton);
-
-        SeleniumUtils.click(driver, logoutButton);
-
+        WebElement menuBtn = SeleniumUtils.waitClickable(driver, menuButton, Duration.ofSeconds(10));
+        new Actions(driver).moveToElement(menuBtn).click().perform();
+        WebElement logout = SeleniumUtils.waitClickable(driver, logoutButton, Duration.ofSeconds(10));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", logout);
+        SeleniumUtils.wait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.urlToBe(Constants.Links.LOGIN_BASE_URL.getValue()));
         return new LoginPage(driver);
+    }
+
+    private String toProductSlug(String productName) {
+        return productName == null ? "" : productName.trim().toLowerCase()
+                .replace(" ", "-")
+                .replace(".", "")
+                .replace("(", "")
+                .replace(")", "");
     }
 }

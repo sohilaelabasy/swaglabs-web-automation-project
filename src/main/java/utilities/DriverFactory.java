@@ -11,6 +11,9 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public final class DriverFactory {
 
     private static final Logger logger = LoggerFactory.getLogger(DriverFactory.class);
@@ -95,6 +98,11 @@ public final class DriverFactory {
 
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
+
+            Map<String, Object> prefs = new HashMap<>();
+            prefs.put("credentials_enable_service", false);
+            prefs.put("profile.password_manager_enabled", false);
+            options.setExperimentalOption("prefs", prefs);
 
             WebDriver driver = new ChromeDriver(options);
             maximizeSafely(driver);

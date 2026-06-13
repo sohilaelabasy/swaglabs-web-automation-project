@@ -1,9 +1,14 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import utilities.Constants;
 import utilities.SeleniumUtils;
+
+import java.time.Duration;
 
 import java.util.List;
 
@@ -118,7 +123,21 @@ public class CheckoutStepTwo {
     }
 
     public CheckoutCompleted clickFinish() {
-        SeleniumUtils.click(driver, FINISH_BUTTON);
+        WebElement button = SeleniumUtils.waitClickable(driver, FINISH_BUTTON, Duration.ofSeconds(10));
+        button.click();
+        try {
+            SeleniumUtils.wait(driver, Duration.ofSeconds(5))
+                    .until(ExpectedConditions.urlToBe(Constants.Links.COMPLETE_ORDER_PAGE_URL.getValue()));
+            return new CheckoutCompleted(driver);
+        } catch (RuntimeException ignored) {
+            // Click didn't trigger navigation — try JS click
+        }
+        WebElement retry = SeleniumUtils.waitClickable(driver, FINISH_BUTTON, Duration.ofSeconds(5));
+        if (driver instanceof JavascriptExecutor js) {
+            js.executeScript("arguments[0].click();", retry);
+        } else {
+            retry.click();
+        }
         return new CheckoutCompleted(driver);
     }
 

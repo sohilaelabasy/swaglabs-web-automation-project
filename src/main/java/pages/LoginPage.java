@@ -2,7 +2,11 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import utilities.Constants;
 import utilities.SeleniumUtils;
+
+import java.time.Duration;
 
 public class LoginPage {
 
@@ -33,6 +37,13 @@ public class LoginPage {
     }
 
     public LandingPage login(String usernameText, String passwordText) {
+        SeleniumUtils.wait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.or(
+                ExpectedConditions.visibilityOfElementLocated(userName),
+                ExpectedConditions.urlToBe(Constants.Links.LANDING_PAGE_URL.getValue())
+        ));
+        if (driver.getCurrentUrl().equals(Constants.Links.LANDING_PAGE_URL.getValue())) {
+            return new LandingPage(driver);
+        }
 
         enterUserName(usernameText);
         enterPassword(passwordText);

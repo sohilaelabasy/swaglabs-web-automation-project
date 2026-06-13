@@ -19,7 +19,7 @@ import java.time.Duration;
 
 public final class SeleniumUtils {
     private static final Logger logger = LoggerFactory.getLogger(SeleniumUtils.class);
-    private static final Duration DEFAULT_TIMEOUT = Duration.ofSeconds(5);
+    private static final Duration DEFAULT_TIMEOUT = Duration.ofSeconds(10);
 
     private SeleniumUtils() {
     }
@@ -64,6 +64,7 @@ public final class SeleniumUtils {
 
     public static void type(WebDriver driver, By locator, String text) {
         WebElement element = waitVisible(driver, locator);
+        element.clear();
         element.sendKeys(text);
     }
 

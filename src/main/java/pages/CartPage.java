@@ -1,11 +1,15 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import utilities.Constants;
 import utilities.SeleniumUtils;
 
 import java.util.ArrayList;
+import java.time.Duration;
 import java.util.List;
 
 public class CartPage {
@@ -24,7 +28,26 @@ public class CartPage {
     //ACTIONS
 
     public Checkout clickCheckout(){
-        SeleniumUtils.click(driver , CHECKOUT_BUTTON);
+        SeleniumUtils.wait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.urlToBe(Constants.Links.CART_PAGE_URL.getValue()));
+        WebElement button = SeleniumUtils.waitClickable(driver, CHECKOUT_BUTTON, Duration.ofSeconds(10));
+        SeleniumUtils.scrollIntoView(driver, CHECKOUT_BUTTON);
+        button.click();
+        try {
+            SeleniumUtils.wait(driver, Duration.ofSeconds(5))
+                    .until(ExpectedConditions.urlToBe(Constants.Links.CHECKOUT_STEP_ONE.getValue()));
+            return new Checkout(driver);
+        } catch (RuntimeException ignored) {
+            // Click didn't trigger navigation — re-find and JS click
+        }
+        WebElement retry = SeleniumUtils.waitClickable(driver, CHECKOUT_BUTTON, Duration.ofSeconds(5));
+        if (driver instanceof JavascriptExecutor js) {
+            js.executeScript("arguments[0].click();", retry);
+        } else {
+            retry.click();
+        }
+        SeleniumUtils.wait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.urlToBe(Constants.Links.CHECKOUT_STEP_ONE.getValue()));
         return new Checkout(driver);
     }
 
@@ -53,7 +76,7 @@ public class CartPage {
     public void removeProduct(String productName){
 
         By removeButton =
-                By.id("remove-" + productName);
+                By.id("remove-" + toProductSlug(productName));
 
         SeleniumUtils.click(driver, removeButton);
     }
@@ -86,5 +109,13 @@ public class CartPage {
         }
 
         return productsPrices;
+    }
+
+    private String toProductSlug(String productName) {
+        return productName == null ? "" : productName.trim().toLowerCase()
+                .replace(" ", "-")
+                .replace(".", "")
+                .replace("(", "")
+                .replace(")", "");
     }
 }

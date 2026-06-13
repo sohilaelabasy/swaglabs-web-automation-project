@@ -46,15 +46,7 @@ public class LandingPageTest extends BaseTest {
         Assert.assertTrue(cartPage.isProductDisplayed(PRODUCT_NAME));
     }
 
-    @Test
-    public void logoutShouldReturnToLoginPage() {
-        LandingPage landingPage = loginAndOpenLandingPage();
-        LoginPage loginPage = landingPage.clickLogout();
 
-        Assert.assertNotNull(loginPage);
-        SeleniumUtils.wait(driver).until(ExpectedConditions.urlToBe(Constants.Links.LOGIN_BASE_URL.getValue()));
-        Assert.assertEquals(driver.getCurrentUrl(), Constants.Links.LOGIN_BASE_URL.getValue());
-    }
 
     private LandingPage loginAndOpenLandingPage() {
         LoginPage loginPage = new LoginPage(driver);

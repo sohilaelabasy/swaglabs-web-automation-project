@@ -15,11 +15,15 @@ import utilities.SeleniumUtils;
 public class CheckoutTest extends BaseTest {
 
     private static final String PRODUCT_NAME = "Sauce Labs Backpack";
+    private static final String FIRST_NAME_REQUIRED_ERROR = "Error: First Name is required";
+    private static final String LAST_NAME_REQUIRED_ERROR = "Error: Last Name is required";
+    private static final String POSTAL_CODE_REQUIRED_ERROR = "Error: Postal Code is required";
     private static final By CHECKOUT_ERROR = By.cssSelector("[data-test='error']");
 
     @Test
     public void checkoutInformationShouldNavigateToStepTwo() {
         Checkout checkout = openCheckoutStepOneWithOneItem();
+
         checkout.fillCheckoutInformation(
                         Constants.CheckoutData.FIRST_NAME.getValue(),
                         Constants.CheckoutData.LAST_NAME.getValue(),
@@ -29,12 +33,14 @@ public class CheckoutTest extends BaseTest {
 
         CheckoutStepTwo checkoutStepTwo = new CheckoutStepTwo(driver);
         SeleniumUtils.wait(driver).until(ExpectedConditions.urlContains("checkout-step-two"));
+
         Assert.assertTrue(checkoutStepTwo.isCheckoutSummaryVisible());
     }
 
     @Test
     public void checkoutShouldShowErrorWhenFirstNameMissing() {
         Checkout checkout = openCheckoutStepOneWithOneItem();
+
         checkout.fillCheckoutInformation(
                         "",
                         Constants.CheckoutData.LAST_NAME.getValue(),
@@ -42,13 +48,13 @@ public class CheckoutTest extends BaseTest {
                 )
                 .clickContinueButton();
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one"));
-        Assert.assertTrue(getCheckoutErrorText().contains("First Name is required"));
+        assertCheckoutStepOneError(FIRST_NAME_REQUIRED_ERROR);
     }
 
     @Test
     public void checkoutShouldShowErrorWhenLastNameMissing() {
         Checkout checkout = openCheckoutStepOneWithOneItem();
+
         checkout.fillCheckoutInformation(
                         Constants.CheckoutData.FIRST_NAME.getValue(),
                         "",
@@ -56,13 +62,13 @@ public class CheckoutTest extends BaseTest {
                 )
                 .clickContinueButton();
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one"));
-        Assert.assertTrue(getCheckoutErrorText().contains("Last Name is required"));
+        assertCheckoutStepOneError(LAST_NAME_REQUIRED_ERROR);
     }
 
     @Test
     public void checkoutShouldShowErrorWhenPostalCodeMissing() {
         Checkout checkout = openCheckoutStepOneWithOneItem();
+
         checkout.fillCheckoutInformation(
                         Constants.CheckoutData.FIRST_NAME.getValue(),
                         Constants.CheckoutData.LAST_NAME.getValue(),
@@ -70,13 +76,13 @@ public class CheckoutTest extends BaseTest {
                 )
                 .clickContinueButton();
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one"));
-        Assert.assertTrue(getCheckoutErrorText().contains("Postal Code is required"));
+        assertCheckoutStepOneError(POSTAL_CODE_REQUIRED_ERROR);
     }
 
     @Test
     public void completeCheckoutShouldNavigateToCompletePage() {
         Checkout checkout = openCheckoutStepOneWithOneItem();
+
         checkout.fillCheckoutInformation(
                         Constants.CheckoutData.FIRST_NAME.getValue(),
                         Constants.CheckoutData.LAST_NAME.getValue(),
@@ -85,10 +91,13 @@ public class CheckoutTest extends BaseTest {
                 .clickContinueButton();
 
         CheckoutStepTwo checkoutStepTwo = new CheckoutStepTwo(driver);
+        SeleniumUtils.wait(driver).until(ExpectedConditions.urlContains("checkout-step-two"));
+
         Assert.assertTrue(checkoutStepTwo.isCheckoutSummaryVisible());
 
         CheckoutCompleted completed = checkoutStepTwo.clickFinish();
         SeleniumUtils.wait(driver).until(ExpectedConditions.urlToBe(Constants.Links.COMPLETE_ORDER_PAGE_URL.getValue()));
+
         Assert.assertTrue(completed.isCheckoutCompleted());
     }
 
@@ -99,13 +108,20 @@ public class CheckoutTest extends BaseTest {
                 Constants.Credentials.LOGIN_PASSWORD.getValue()
         );
 
+        SeleniumUtils.wait(driver).until(ExpectedConditions.urlToBe(Constants.Links.LANDING_PAGE_URL.getValue()));
+
         return landingPage
                 .addToCart(PRODUCT_NAME)
                 .clickCartIcon()
                 .clickCheckout();
     }
 
+    private void assertCheckoutStepOneError(String expectedMessage) {
+        SeleniumUtils.wait(driver).until(ExpectedConditions.urlToBe(Constants.Links.CHECKOUT_STEP_ONE.getValue()));
+        Assert.assertEquals(getCheckoutErrorText(), expectedMessage);
+    }
+
     private String getCheckoutErrorText() {
-        return SeleniumUtils.text(driver, CHECKOUT_ERROR);
+        return SeleniumUtils.text(driver, CHECKOUT_ERROR).trim();
     }
 }

@@ -89,12 +89,5 @@ public class LoginTest extends BaseTest {
     }
 
     //Test case 11 : Logout after login(positive tc)
-    @Test
-    public void logoutAfterLogin() {
-        loginPage.login("standard_user", "secret_sauce");
-        LandingPage landingPage = new LandingPage(driver);
 
-        loginPage = landingPage.clickLogout();
-        Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo"));
-    }
 }

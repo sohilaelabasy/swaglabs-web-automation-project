@@ -1,5 +1,8 @@
 package testcases;
 
+import listeners.AllureReportListener;
+import listeners.ITest;
+import listeners.InvokedMethod;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,6 +10,7 @@ import org.testng.annotations.*;
 import utilities.Constants;
 import utilities.DriverFactory;
 
+@Listeners({ITest.class, InvokedMethod.class, AllureReportListener.class})
 public class BaseTest {
 
     protected WebDriver driver;
