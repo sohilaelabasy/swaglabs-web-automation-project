@@ -97,7 +97,7 @@ public final class DriverFactory {
             logger.info("Starting ChromeDriver");
 
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("--start-maximized");
+            options.addArguments("--headless");
 
             Map<String, Object> prefs = new HashMap<>();
             prefs.put("credentials_enable_service", false);
@@ -119,7 +119,7 @@ public final class DriverFactory {
             logger.info("Starting EdgeDriver");
 
             EdgeOptions options = new EdgeOptions();
-            options.addArguments("--start-maximized");
+            options.addArguments("--headless");
 
             WebDriver driver = new EdgeDriver(options);
             maximizeSafely(driver);
