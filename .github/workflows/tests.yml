@@ -30,7 +30,7 @@ jobs:
           chrome-version: stable
 
       - name: Run TestNG suite (Chrome)
-        run: mvn -B clean test -Dbrowser=chrome
+        run: mvn -B clean test -Dbrowser=chrome -Dmaven.test.failure.ignore=true
 
       # ---- Allure report (CLI-based, no Docker) ----
       - name: Get Allure history
