@@ -41,12 +41,12 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Restore history into results
+      - name: Restore history into allure-results
         if: always()
         run: |
-          mkdir -p target/allure-results
+          mkdir -p allure-results
           if [ -d gh-pages/history ]; then
-            cp -r gh-pages/history target/allure-results/history
+            cp -r gh-pages/history allure-results/history
           fi
 
       - name: Install Allure CLI
@@ -55,7 +55,7 @@ jobs:
 
       - name: Generate Allure report
         if: always()
-        run: allure generate target/allure-results --clean -o allure-report
+        run: allure generate allure-results --clean -o allure-report
 
       - name: Publish report to GitHub Pages
         if: always()
