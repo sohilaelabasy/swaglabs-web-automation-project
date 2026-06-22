@@ -115,3 +115,70 @@
 2026-06-22 19:32:41.951 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
 2026-06-22 19:32:41.951 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
 2026-06-22 19:32:41.951 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-06-22 19:32:55.594 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-06-22 19:33:01.807 [main] INFO  listeners.ITest - TEST START: LoginTest.invalidPasswordLogin
+2026-06-22 19:33:02.571 [main] INFO  listeners.ITest - TEST PASS: LoginTest.invalidPasswordLogin
+2026-06-22 19:33:02.573 [main] INFO  testcases.BaseTest - Closing browser
+2026-06-22 19:33:02.573 [main] INFO  utilities.DriverFactory - Closing browser
+2026-06-22 19:33:02.812 [main] INFO  testcases.BaseTest - Opening browser
+2026-06-22 19:33:02.812 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-06-22 19:33:02.812 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-06-22 19:33:02.812 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-06-22 19:33:02.812 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-06-22 19:33:08.126 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-06-22 19:33:09.149 [main] INFO  listeners.ITest - TEST START: LoginTest.invalidUsernameLogin
+2026-06-22 19:33:09.871 [main] INFO  listeners.ITest - TEST PASS: LoginTest.invalidUsernameLogin
+2026-06-22 19:33:09.872 [main] INFO  testcases.BaseTest - Closing browser
+2026-06-22 19:33:09.873 [main] INFO  utilities.DriverFactory - Closing browser
+2026-06-22 19:33:10.134 [main] INFO  testcases.BaseTest - Opening browser
+2026-06-22 19:33:10.134 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-06-22 19:33:10.134 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-06-22 19:33:10.134 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-06-22 19:33:10.134 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-06-22 19:33:19.096 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-06-22 19:33:21.005 [main] INFO  listeners.ITest - TEST START: LoginTest.lockedOutUserLogin
+2026-06-22 19:33:22.079 [main] INFO  listeners.ITest - TEST PASS: LoginTest.lockedOutUserLogin
+2026-06-22 19:33:22.080 [main] INFO  testcases.BaseTest - Closing browser
+2026-06-22 19:33:22.080 [main] INFO  utilities.DriverFactory - Closing browser
+2026-06-22 19:33:22.671 [main] INFO  testcases.BaseTest - Opening browser
+2026-06-22 19:33:22.671 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-06-22 19:33:22.671 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-06-22 19:33:22.672 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-06-22 19:33:22.672 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-06-22 19:33:30.839 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-06-22 19:33:31.861 [main] INFO  listeners.ITest - TEST START: LoginTest.loginWithPerformanceGlitchUser
+2026-06-22 19:33:37.755 [main] INFO  listeners.ITest - TEST PASS: LoginTest.loginWithPerformanceGlitchUser
+2026-06-22 19:33:37.756 [main] INFO  testcases.BaseTest - Closing browser
+2026-06-22 19:33:37.756 [main] INFO  utilities.DriverFactory - Closing browser
+2026-06-22 19:33:38.271 [main] INFO  testcases.BaseTest - Opening browser
+2026-06-22 19:33:38.272 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-06-22 19:33:38.272 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-06-22 19:33:38.272 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-06-22 19:33:38.272 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-06-22 19:33:41.128 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-06-22 19:33:42.170 [main] INFO  listeners.ITest - TEST START: LoginTest.loginWithProblemUser
+2026-06-22 19:33:43.046 [main] INFO  listeners.ITest - TEST PASS: LoginTest.loginWithProblemUser
+2026-06-22 19:33:43.047 [main] INFO  testcases.BaseTest - Closing browser
+2026-06-22 19:33:43.047 [main] INFO  utilities.DriverFactory - Closing browser
+2026-06-22 19:33:43.280 [main] INFO  testcases.BaseTest - Opening browser
+2026-06-22 19:33:43.280 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-06-22 19:33:43.280 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-06-22 19:33:43.281 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-06-22 19:33:43.281 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-06-22 19:33:46.068 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-06-22 19:33:47.025 [main] INFO  listeners.ITest - TEST START: LoginTest.validLogin
+2026-06-22 19:33:47.483 [main] INFO  listeners.ITest - TEST PASS: LoginTest.validLogin
+2026-06-22 19:33:47.484 [main] INFO  testcases.BaseTest - Closing browser
+2026-06-22 19:33:47.485 [main] INFO  utilities.DriverFactory - Closing browser
+2026-06-22 19:33:47.652 [main] INFO  testcases.BaseTest - Opening browser
+2026-06-22 19:33:47.652 [main] WARN  utilities.DriverFactory - No browser specified. Defaulting to Chrome
+2026-06-22 19:33:47.652 [main] INFO  utilities.DriverFactory - No driver found. Creating new driver for: chrome
+2026-06-22 19:33:47.652 [main] INFO  utilities.DriverFactory - Initializing driver for: chrome
+2026-06-22 19:33:47.652 [main] INFO  utilities.DriverFactory - Starting ChromeDriver
+2026-06-22 19:33:55.587 [main] INFO  testcases.BaseTest - Navigating to SauceDemo
+2026-06-22 19:33:56.275 [main] INFO  listeners.ITest - TEST START: LoginTest.verifyLoginPageTitle
+2026-06-22 19:33:56.286 [main] INFO  listeners.ITest - TEST PASS: LoginTest.verifyLoginPageTitle
+2026-06-22 19:33:56.287 [main] INFO  testcases.BaseTest - Closing browser
+2026-06-22 19:33:56.288 [main] INFO  utilities.DriverFactory - Closing browser
+2026-06-22 19:33:56.459 [main] INFO  listeners.ITest - CONTEXT FINISH: swaglabs-web-automation-project
+2026-06-22 19:33:56.463 [main] INFO  listeners.AllureReportListener - Opening Allure report...
