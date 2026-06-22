@@ -3,8 +3,8 @@ package testcases;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.LandingPage;
 import pages.LoginPage;
+import utilities.BaseTest;
 
 public class LoginTest extends BaseTest {
     LoginPage loginPage;
@@ -13,10 +13,11 @@ public class LoginTest extends BaseTest {
         loginPage = new LoginPage(driver);
     }
     //Test Case 1 : Valid Login with standard_user(positive tc)
-    @Test
+    @Test(groups = {"smoke"})
     public void validLogin(){
         loginPage.login("standard_user" ,"secret_sauce");
         Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
+        System.out.println("Driver in LoginPage = " + driver);
     }
 
     //Test Case 2 : Login with locked_out_user(negative tc)
@@ -88,6 +89,14 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
     }
 
-    //Test case 11 : Logout after login(positive tc)
+    // Test case 11 : Login with spaces only in username and password(negative tc)
+    @Test
+    public void loginWithSpacesOnlyShouldShowUsernameRequiredError() {
+        loginPage.login("   ", "   ");
 
+        Assert.assertTrue(
+                loginPage.getErrorMessage()
+                        .contains("Username is required")
+        );
+    }
 }

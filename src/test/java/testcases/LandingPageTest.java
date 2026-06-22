@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.CartPage;
 import pages.LandingPage;
 import pages.LoginPage;
+import utilities.BaseTest;
 import utilities.Constants;
 import utilities.SeleniumUtils;
 
@@ -13,7 +14,7 @@ public class LandingPageTest extends BaseTest {
 
     private static final String PRODUCT_NAME = "Sauce Labs Backpack";
 
-    @Test
+    @Test(groups = "smoke")
     public void addToCartShouldIncreaseCartBadgeCount() {
         LandingPage landingPage = loginAndOpenLandingPage();
         Assert.assertEquals(landingPage.getCartBadgeCount(), 0);
