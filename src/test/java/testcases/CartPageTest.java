@@ -14,7 +14,7 @@ public class CartPageTest extends BaseTest {
 
     private static final String PRODUCT_NAME = "Sauce Labs Backpack";
 
-    @Test(groups = {"smoke"})
+    @Test
     public void cartShouldDisplayAddedProduct() {
 
         CartPage cartPage = addProductAndOpenCartPage();

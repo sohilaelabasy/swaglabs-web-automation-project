@@ -14,7 +14,7 @@ public class LandingPageTest extends BaseTest {
 
     private static final String PRODUCT_NAME = "Sauce Labs Backpack";
 
-    @Test(groups = "smoke")
+    @Test
     public void addToCartShouldIncreaseCartBadgeCount() {
         LandingPage landingPage = loginAndOpenLandingPage();
         Assert.assertEquals(landingPage.getCartBadgeCount(), 0);
