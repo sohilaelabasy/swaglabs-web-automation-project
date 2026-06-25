@@ -9,6 +9,7 @@ import pages.CheckoutCompleted;
 import pages.CheckoutStepTwo;
 import pages.LandingPage;
 import pages.LoginPage;
+import utilities.BaseTest;
 import utilities.Constants;
 import utilities.SeleniumUtils;
 
@@ -79,7 +80,7 @@ public class CheckoutTest extends BaseTest {
         assertCheckoutStepOneError(POSTAL_CODE_REQUIRED_ERROR);
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void completeCheckoutShouldNavigateToCompletePage() {
         Checkout checkout = openCheckoutStepOneWithOneItem();
 
@@ -123,5 +124,49 @@ public class CheckoutTest extends BaseTest {
 
     private String getCheckoutErrorText() {
         return SeleniumUtils.text(driver, CHECKOUT_ERROR).trim();
+    }
+    @Test
+    public void checkoutShouldShowErrorWhenAllFieldsEmpty() {
+
+        Checkout checkout = openCheckoutStepOneWithOneItem();
+
+        checkout.fillCheckoutInformation("", "", "")
+                .clickContinueButton();
+
+        assertCheckoutStepOneError(
+                "Error: First Name is required"
+        );
+    }
+    @Test
+    public void checkoutShouldShowErrorWhenFirstAndLastNameMissing() {
+
+        Checkout checkout = openCheckoutStepOneWithOneItem();
+
+        checkout.fillCheckoutInformation(
+                        "",
+                        "",
+                        Constants.CheckoutData.POSTAL_CODE.getValue()
+                )
+                .clickContinueButton();
+
+        assertCheckoutStepOneError(
+                "Error: First Name is required"
+        );
+    }
+    @Test
+    public void checkoutShouldShowErrorWhenFirstNameAndPostalCodeMissing() {
+
+        Checkout checkout = openCheckoutStepOneWithOneItem();
+
+        checkout.fillCheckoutInformation(
+                        "",
+                        Constants.CheckoutData.LAST_NAME.getValue(),
+                        ""
+                )
+                .clickContinueButton();
+
+        assertCheckoutStepOneError(
+                "Error: First Name is required"
+        );
     }
 }
