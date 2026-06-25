@@ -7,7 +7,7 @@ import pages.CartPage;
 import pages.LandingPage;
 import pages.LoginPage;
 import utilities.Constants;
-import utilities.BaseTest;
+import testcases.BaseTest;
 import utilities.SeleniumUtils;
 
 public class CartPageTest extends BaseTest {

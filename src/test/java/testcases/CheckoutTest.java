@@ -9,7 +9,7 @@ import pages.CheckoutCompleted;
 import pages.CheckoutStepTwo;
 import pages.LandingPage;
 import pages.LoginPage;
-import utilities.BaseTest;
+import testcases.BaseTest;
 import utilities.Constants;
 import utilities.SeleniumUtils;
 
