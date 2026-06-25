@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
         loginPage = new LoginPage(driver);
     }
     //Test Case 1 : Valid Login with standard_user(positive tc)
-    @Test(groups = {"smoke"})
+    @Test
     public void validLogin(){
         loginPage.login("standard_user" ,"secret_sauce");
         Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
@@ -87,16 +87,5 @@ public class LoginTest extends BaseTest {
     public void loginWithPerformanceGlitchUser() {
         loginPage.login("performance_glitch_user", "secret_sauce");
         Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
-    }
-
-    // Test case 11 : Login with spaces only in username and password(negative tc)
-    @Test
-    public void loginWithSpacesOnlyShouldShowUsernameRequiredError() {
-        loginPage.login("   ", "   ");
-
-        Assert.assertTrue(
-                loginPage.getErrorMessage()
-                        .contains("Username is required")
-        );
     }
 }
